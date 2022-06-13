@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+/* Header */
+header{
+    background-color: black;
+}
+.nav-links{
+    word-spacing: 50px;
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    position: fixed;
+    z-index: 500;
+    text-align: center;
+}
+.nav-links h2{
+    text-decoration: none;
+    color: #fff;
+    display: inline;
+    font-size: 25px;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    opacity: 0.8;
+}
+.nav-links li a:hover{
+    opacity: 1;
+}
+/* Home section */
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/pexels-anush-gorak-1229356.jpg);
+    position: relative;
+}
+.home h1{
+    color: #fff;
+}
+.video-background{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+/* BMI calculator */
+
+/* pricing */
+.price h1{
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+}
+.price p{
+    text-align: center;
+}
+.price_head{
+    text-align: center;
+    padding: 50px 100px;
+}
+.red_col{
+    color: #2E9CCA;
+}
+.container{
+    margin-bottom: 5%;
+}
+.row{
+    display: flex;
+    text-align: center;
+}
+.col{
+    box-sizing: border-box;
+    border: black;
+}
+.card-title{
+    text-align: center;
+    font-size: 30px;
+}
+.card-text{
+    text-align: center;
+    padding-top: 10px;
+    line-height: 40px;
+}
+
+.card-price{
+    color: #2E9CCA;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+.btn-price{
+    text-align: center;
+    position: center;
+    background-color: #002366;
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 auto;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.btn-price:hover{
+    background-color: white;
+    color: #2E9CCA;
+    border: #2E9CCA solid 2px;
+}
+.fees{
+    text-decoration: none;
+    color: #2E9CCA;
+}
+/*Contact*/
+
+.contact{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/girl.jpg);
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h1{
+    color: #fff;
+    font-size: 50px;
+}
+.contact p{
+    color: #fff3f3;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .box{
+    display: block;
+    padding: 20px 0;
+
+}
+.container .box .icon{
+    display: block;
+    font-size: 22px;
+    color: #fff;
+}
+.container .box .text{
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.container .box .text h3{
+    font-weight: 500;
+    color: #fff;
+}
+.ContactForm{
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.ContactForm h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.ContactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.ContactForm .inputBox input,
+.ContactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.ContactForm .inputBox span{
+    position: absolute;
+    left: 3px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+.ContactForm .inputBox input:focus ~ span,
+.ContactForm .inputBox input:valid ~ span,
+.ContactForm .inputBox textarea:focus ~ span,
+.ContactForm .inputBox textarea:valid ~ span
+{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.ContactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.ContactForm .inputBox input[type="submit"]:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/*Footer*/
+footer{
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+footer h2{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+}
+.footer-social{
+    text-decoration: none;
+    padding: 2% 6%;
+    list-style: none;
+    text-align: center;
+}
+.footer-social span{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; 
+    padding-left: 10px;
+}
+footer .fab{
+    color: #fff;
+}
+.footer-social li {
+    display: inline-block;
+    padding-left: 0;
+    margin-right: .9rem;
+    line-height: 3.9rem;
+    vertical-align: middle;
+}
+.footer-social li a{
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer-social li a:hover{
+    opacity: 1;
+}
+.copyright span {
+    display: inline-block;
+    color: gray;
+    padding: 0 1rem 0 1.2rem;
+}
+.my:hover{
+    color: #fff;
+    opacity: 0.7;
+}
